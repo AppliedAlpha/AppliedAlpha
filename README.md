@@ -24,11 +24,12 @@ Template?!
 - ???
 
 ### 🌱 배우고 있는 건... / I’m currently learning...
+- Web Programming with Spring Framework and Java
+- Web Server with nginx, Apache Httpd
 - Problem Solving with C++17, Python 3
 - Arduino Programming with C
 - WPF Application Programming with C# .NET Framework
-- Web Programming with Node.js
-- A bit of Java
+- NPM and Node.js
 
 ### ⚡ 했던 것들은... / TMI
 - PS
