@@ -36,3 +36,7 @@ Template?!
   - ![](https://via.placeholder.com/15/0076C0/000000?text=+) [BOJ](https://www.acmicpc.net/user/applied7076) Problems 500+ Solved, In 1000 Rank
   - ![](https://via.placeholder.com/15/27E2A4/000000?text=+) [solved.ac](https://solved.ac/profile/applied7076) **Platinum II**, In 500 Rank
   - ![](https://via.placeholder.com/15/A702FF/000000?text=+) NYPC 2018, 2019 Preliminary In 500 Specialist
+
+<br />
+
+[![solved.ac tier](http://mazassumnida.wtf/api/generate_badge?boj=applied7076)](https://solved.ac/applied7076) <!-- Thx to SkyLightQP -->
