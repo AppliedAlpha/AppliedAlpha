@@ -40,4 +40,4 @@ Template?!
 
 <br />
 
-[![solved.ac tier](http://mazassumnida.wtf/api/generate_badge?boj=applied7076)](https://solved.ac/applied7076) <!-- Thx to SkyLightQP -->
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=applied7076)](https://solved.ac/applied7076) <!-- Thx to SkyLightQP -->
