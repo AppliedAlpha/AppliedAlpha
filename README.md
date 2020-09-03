@@ -8,8 +8,9 @@
 
 ### 🔭 저는 지금... / I'm now...
 - [KDMHS WP17](http://dimigo.hs.kr) (2018.03 ~ )
-- ???
+<!-- - ??? -->
 
+<!--
 ### 🌱 배우고 있는 건... / I’m currently learning...
 - Web Programming with Spring Framework and Java
 - Web Server with nginx, Apache Httpd
@@ -18,6 +19,7 @@
 - Arduino Programming with C
 - WPF Application Programming with C# .NET Framework
 - JavaScript, Node.js, React ...
+-->
 
 ### ⚡ 했던 것들은... / TMI
 - PS
