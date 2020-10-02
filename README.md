@@ -1,8 +1,6 @@
 ### Jihoon Kim -- @AppliedAlpha
-
-[![Twitter](https://img.shields.io/badge/-Twitter-1877f2?style=flat-square&logo=twitter&logoColor=white&link=https://twitter.com/aria_applied/)](https://twitter.com/aria_applied/)
-
 <!--
+[![Twitter](https://img.shields.io/badge/-Twitter-1877f2?style=flat-square&logo=twitter&logoColor=white&link=https://twitter.com/aria_applied/)](https://twitter.com/aria_applied/)
 [![My Github Stats](https://github-readme-stats.vercel.app/api?username=AppliedAlpha&show_icons=true&hide_border=true)](https://github.com/AppliedAlpha)
 -->
 
