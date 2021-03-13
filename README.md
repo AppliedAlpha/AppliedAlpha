@@ -8,7 +8,7 @@
 
 ### 🔭 저는 지금... / I'm now...
 - [KDMHS WP17](http://dimigo.hs.kr) (2018.03 ~ 2021.01)
-- [Sejong Univ. SW Department Undergraduate](https://sejong.ac.kr) (2021.03 ~)
+- [Sejong Univ. SW Department Undergraduate](http://sejong.ac.kr) (2021.03 ~)
 <!-- - ??? -->
 
 <!--
