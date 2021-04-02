@@ -1,10 +1,10 @@
 ![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=300&section=header&text=Jihun%20Kim&fontSize=90)
 
-<h2 align="center">(a.k.a. AppliedAlpha)</h2>
+<h3 align="center">(a.k.a. AppliedAlpha)</h3>
 <br />
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=AppliedAlpha&show_icons=true&hide_border=true" />
+<img src="https://github-readme-stats.vercel.app/api?username=AppliedAlpha&show_icons=true" />
 </p>
 
 <br />
