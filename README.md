@@ -44,7 +44,7 @@
   <p align="center">
     <a href="https://www.acmicpc.net/user/applied7076"><img src="https://img.shields.io/badge/Baekjoon%20OJ-176fa7?style=flat-square&logo=Codeforces&logoColor=white&link=https://www.acmicpc.net/user/applied7076"/></a>&nbsp
     <a href="https://solved.ac/profile/applied7076"><img src="https://img.shields.io/badge/solved.ac-17cd3a?style=flat-square&logo=Checkmarx&logoColor=white&link=https://solved.ac/profile/applied7076"/></a>&nbsp
-    <a href="https://www.instagram.com/applied7076/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/applied7076/"/></a>&nbsp
+    <a href="https://www.instagram.com/applied7076/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/appliedalpha/"/></a>&nbsp
     <a href="mailto:appliedalpha@sju.ac.kr"><img src="https://img.shields.io/badge/Mail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=appliedalpha@sju.ac.kr"/></a>
   </p>
 </p>
