@@ -13,10 +13,10 @@
   <h3 align="center">🖋 Antecedents 📑</h3>
   <p align="center">Where I've been to?</p>
   <li align="center">
-    <a href="http://dimigo.hs.kr">KDMHS WP17</a> (2018.03 ~ 2021.01)
+    <a href="http://dimigo.hs.kr">KDMHS 17th, Dept. of Web Programming</a> (2018.03 ~ 2021.01)
   </li>
   <li align="center">
-    <a href="http://sejong.ac.kr">Sejong Univ. SW Department</a> (2021.03 ~ Undergraduate)
+    <a href="http://sejong.ac.kr">Sejong University 21, Dept. of Software</a> (2021.03 ~ Undergraduate)
   </li>
 </p>
 
