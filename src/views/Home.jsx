@@ -1,14 +1,10 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
 import { GithubIcon } from '../components/Icons';
+import { userConfig } from '../config';
 
 export default function Home() {
-    const userName = import.meta.env.VITE_USER_NAME;
-    const userRole = import.meta.env.VITE_USER_ROLE;
-    const userEmail = import.meta.env.VITE_USER_EMAIL;
-    const userPhone = import.meta.env.VITE_USER_PHONE;
-
-    const githubUrl = import.meta.env.VITE_GITHUB_URL;
+    const { name: userName, role: userRole, email: userEmail, githubUrl } = userConfig;
 
     return (
         <section id="home" className="py-20">

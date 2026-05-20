@@ -1,33 +1,25 @@
 import React, { useState } from 'react';
 import { X, Mail, Check } from 'lucide-react';
+import { userConfig } from '../config';
 
 export default function BusinessCard({ isOpen, onClose }) {
     const [copiedField, setCopiedField] = useState(null);
-    const userName = import.meta.env.VITE_USER_NAME;
-    const userRole = import.meta.env.VITE_USER_ROLE;
-    const userEmail = import.meta.env.VITE_USER_EMAIL;
-    const userPhone = import.meta.env.VITE_USER_PHONE;
+    const { name: userName, role: userRole, email: userEmail, phone: userPhone } = userConfig;
 
     if (!isOpen) return null;
 
     const handleCopy = (text, field) => {
-        const textArea = document.createElement("textarea");
-        textArea.value = text;
-        document.body.appendChild(textArea);
-        textArea.select();
-        try {
-            document.execCommand('copy');
+        navigator.clipboard.writeText(text).then(() => {
             setCopiedField(field);
             setTimeout(() => setCopiedField(null), 2000);
-        } catch (err) {
-            console.error('Copy Failure:', err);
-        }
-        document.body.removeChild(textArea);
+        }).catch(err => {
+            console.error('Copy failure:', err);
+        });
     };
 
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-stone-900/30 backdrop-blur-sm" onClick={onClose}>
-            <div className="relative w-full max-w-md aspect-[1.8/1] bg-[#fdfcf8] shadow-2xl rounded-sm border border-stone-300 p-8 flex flex-col justify-between">
+            <div className="relative w-full max-w-md aspect-[1.8/1] bg-[#fdfcf8] shadow-2xl rounded-sm border border-stone-300 p-8 flex flex-col justify-between" onClick={(e) => e.stopPropagation()}>
                 <button onClick={onClose} className="absolute top-4 right-4"><X size={20} /></button>
 
                 <div className="border-l-4 border-stone-800 pl-4 mt-2">

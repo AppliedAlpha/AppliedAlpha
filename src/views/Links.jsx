@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link as LinkIcon, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../components/Icons';
+import { userConfig } from '../config';
 
 export default function Links() {
-    const userEmail = import.meta.env.VITE_USER_EMAIL;
-    const userPhone = import.meta.env.VITE_USER_PHONE;
-
-    const githubUrl = import.meta.env.VITE_GITHUB_URL;
+    const { email: userEmail, githubUrl } = userConfig;
 
     return (
         <section id="links" className="py-20">
