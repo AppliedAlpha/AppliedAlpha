@@ -1,6 +1,7 @@
 import React from 'react';
 import { Briefcase, GraduationCap, Download } from 'lucide-react';
 import AccordionItem from '../components/AccordionItem';
+import EducationItem from '../components/EducationItem';
 import { portfolioData } from '../data/data';
 
 export default function Resume() {
@@ -34,13 +35,14 @@ export default function Resume() {
                 Education
             </h2>
             <div className="mb-12">
-                {education.map((edu, idx) => (
-                    <AccordionItem key={edu.id} title={edu.school} role={edu.degree} date={edu.period} defaultOpen={idx === 0}>
-                        {edu.description && <p className="mb-2">{edu.description}</p>}
-                        <ul className="list-disc list-inside space-y-1 ml-2 text-stone-600">
-                            {edu.details.map((detail, i) => <li key={i}>{detail}</li>)}
-                        </ul>
-                    </AccordionItem>
+                {education.map((edu) => (
+                    <EducationItem
+                        key={edu.id}
+                        school={edu.school}
+                        url={edu.url}
+                        degree={edu.degree}
+                        date={edu.period}
+                    />
                 ))}
             </div>
         </section>
