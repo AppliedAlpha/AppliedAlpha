@@ -108,21 +108,124 @@ export const portfolioData = {
     ],
     projects: [
         {
-            id: "proj-1",
-            title: "마이 레시피 북 (My Recipe Book)",
-            period: "2023.05 - 2023.08",
-            summary: "나만의 레시피를 저장하고 공유하는 서비스",
-            description: "사용자가 자신만의 레시피를 등록하고 다른 사용자와 공유할 수 있는 웹 서비스입니다. 무한 스크롤 기능을 통해 대량의 데이터를 효율적으로 렌더링하도록 구현했습니다.",
-            stack: ["React", "Firebase", "Tailwind"],
+            id: "proj-najr",
+            title: "NAJR: [나.인.페] 좌석 예약 서비스",
+            period: "2025.02",
+            description: `2025년 나름청소년활동센터 청소년어울마당 [나.인.페] 공연 운영을 위해 제작한 Web App 좌석 예매 시스템으로, 별도의 회원가입 없이도 관객이 좌석을 예약·관리할 수 있도록 설계했습니다.`,
+            details: [
+                "이름·연락처·이메일 인증만으로 좌석 예약, 본인 예약 조회·취소 흐름 구현",
+                "실시간 좌석 현황 표시 (잔여석/매진석 시각화)",
+                "Gmail SMTP 기반 이메일 인증코드 발송",
+                "공지사항·공연 일정 인앱 팝업 안내"
+            ],
+            stack: ["Python", "Flask", "SQLite", "Jinja2", "Bootstrap"],
             links: [
-                { type: "github", url: "#" },
-                { type: "blog",   url: "#" },
-                { type: "site",   url: "#" }
+                { type: "site", url: "https://2025festival.team-cluster.kr/" },
+                { type: "github", url: "https://github.com/TeamCluster/2025-Nareum-Festival-Seat" },
             ],
             images: [
-                { alt: "메인 화면 스크린샷 (1/3)" },
-                { alt: "레시피 작성 화면 (2/3)" },
-                { alt: "마이페이지 화면 (3/3)" }
+                { src: "/proj/najr01.png", alt: "Landing Page" },
+                { src: "/proj/najr02.png", alt: "Checking Reservation" }
+            ]
+        },
+        {
+            id: "proj-nareum-cuts",
+            title: "나름네컷: 네컷 사진 포토부스 어플리케이션",
+            period: "2024.11 - 2024.12",
+            description: `나름청소년활동센터 행사 부스 운영을 위해 제작한 포토부스 데스크톱 앱으로, 행사장에서 사진 촬영부터 출력까지 한 화면에서 진행할 수 있습니다.`,
+            details: [
+                "PyQt5 단일 윈도우로 '프레임 선택 → 사진 촬영 → 프레임 합성 및 저장' 흐름 구성",
+                "OpenCV로 웹캠 연결·실시간 프리뷰 처리",
+                "Pillow로 PNG 프레임 합성, 네컷 이미지 결과물 생성",
+                "3D 프린팅·아두이노 자작 리모콘으로 상하좌우 선택·촬영 제어",
+                "완성된 사진을 즉시 프린트해 사용자에게 제공"
+            ],
+            stack: ["Python", "PyQt5", "OpenCV", "Arduino", "3D Printing"],
+            images: [
+                { src: "/proj/cuts01.png", alt: "Welcome Screen" },
+                { src: "/proj/cuts02.png", alt: "Frame Selection" },
+                { src: "/proj/cuts03.png", alt: "Capturing Screen" }
+            ]
+        },
+        {
+            id: "proj-gmmap",
+            title: "GM MAP: AR/VR 콘텐츠 체험형 관광 앱",
+            period: "2022.08 - 2022.10",
+            description: `광명시 나름청소년활동센터에서 '제7회 구미 3D프린팅BIZCON경진대회'에 출품해 수상한 체험형 관광 상품으로, 3D 프린팅 출력물과 모바일 어플리케이션을 결합해 관광지를 입체적으로 소개합니다.`,
+            details: [
+                "관광지를 본뜬 3D 프린팅 모델(광명 '오리서원', 구미 '석조여래좌상')을 스캔하면 해당 콘텐츠 제공",
+                "VR 모드: 실제 관광지를 360도 거리뷰로 관람",
+                "AR 모드: 모델 위에 세부 구현 표시 + 음성 설명 재생",
+                "Unity 기반 3D 모델 Object Tracking, AR Session을 활용한 모델 출력 구현"
+            ],
+            stack: ["Unity", "C#", "AR Foundation"],
+            links: [
+                { type: "site",    url: "https://gmmap.quv.kr/5" },
+                { type: "youtube", url: "https://youtu.be/PfUZdlyOjhc" }
+            ],
+            images: [
+                { src: "/proj/gmmap01.png", alt: "Overview" },
+                { src: "/proj/gmmap02.png", alt: "App Screens" },
+                { src: "/proj/gmmap03.png", alt: "VR Street View" },
+            ]
+        },
+        {
+            id: "proj-usb",
+            title: "U.S.B.: 비접촉식 버스 하차벨",
+            period: "2022.06 - 2022.09",
+            description: `광명시 나름청소년활동센터 Team 나이커에서 '제6회 울산 DfAM(Design for Additive Manufacturing) 경진대회'에 출품해 수상한 IoT 작품으로, 비접촉 & 블루투스 방식 제어를 통해 감염병 전파를 예방하고 이동약자의 접근성을 높이고자 하였습니다.`,
+            details: [
+                "조도(CDS) 센서 기반 손 감지: 부팅 시 주변 광량 Calibration 후 임계점 이하 시 감지",
+                "ESP32 블루투스 시리얼 통신: 모바일 앱에서 원격 트리거 (혼잡 시·이동약자용)",
+                "LED·부저 LEDC PWM 제어로 알림 신호 출력",
+                "3D 프린팅 디자인으로 파츠별 출력·조립·교체 가능",
+                "ESP32 모듈 프로그래밍 담당"
+            ],
+            stack: ["C", "Arduino", "ESP32", "Bluetooth Serial", "3D Printing"],
+            links: [
+                { type: "github", url: "https://github.com/TeamCluster/Untouchable_Stop_Bell" }
+            ],
+            images: [
+                { src: "/proj/usb01.png", alt: "Overview" },
+            ]
+        },
+        {
+            id: "proj-gretel",
+            title: "그레텔과 윈슬로의 별장: 포인트 앤 클릭 방탈출 퍼즐 게임",
+            period: "2021.06 - 2022.01",
+            description: `세종대학교 게임 동아리 '판도라큐브' 소속 Team E.T.에서 개발한 스토리 기반 2D 포인트 앤 클릭 방탈출 퍼즐 게임으로, 2022년 1월 멀티 플랫폼 ESD 'Steam'에 정식 출시했습니다.`,
+            details: [
+                "Team E.T.에서 프로그래밍 담당, 게임 기능 구현 및 개발",
+                "포인트 & 클릭 인터랙션, 스토리 진행·퍼즐 분기·인벤토리 등 게임 시스템 구현",
+                "Steam 출시 이후 버그 수정 및 스토리·퍼즐·도전과제 추가 등 유지보수 진행 중"
+            ],
+            stack: ["Unity", "C#"],
+            links: [
+                { type: "steam", url: "https://store.steampowered.com/app/1767320" }
+            ],
+            images: [
+                { src: "/proj/gretel01.png", alt: "Overview" },
+            ],
+            TODO: "스틸컷 & 인게임 스크린샷으로 사진 수정 필요"
+        },
+        {
+            id: "proj-keyboard-blind",
+            title: "손으로 말하는 키보드: 음성 피드백 보조 키보드",
+            period: "2019.06 - 2019.08",
+            description: `광명시 나름청소년활동센터에서 '제9회 창의메이커스필드 SW활용 아이디어톤'에 출품해 수상한 보조 입력 장치로, 시각장애인이 별도의 소프트웨어 설치 없이 PC에 텍스트를 입력하면서 음성 피드백을 받을 수 있도록 설계했습니다.`,
+            details: [
+                "Arduino Leonardo(ATmega32U4) 기반, 아날로그 핀(A0~A10)에 물리 스위치 매핑",
+                "DFPlayer Mini MP3 모듈로 누른 키마다 한국어/영어 음성 피드백 재생",
+                "Fusion 360으로 3D 모델링 + PLA로 케이스 출력",
+                "Arduino 프로그래밍 담당, Keyboard.h로 입력 및 동작 구현"
+            ],
+            stack: ["C", "Arduino", "3D Printing"],
+            links: [
+                { type: "github", url: "https://github.com/TeamCluster/Keyboard_for_blinds" }
+            ],
+            images: [
+                { src: "/proj/keyboard01.png", alt: "Overview" },
+                { src: "/proj/keyboard02.png", alt: "Modeling" }
             ]
         }
     ],
@@ -131,7 +234,6 @@ export const portfolioData = {
             id: "lab-1",
             title: "날씨 기반 옷차림 추천기",
             period: "2023.11",
-            summary: "OpenWeather API를 활용한 가벼운 유틸리티",
             description: "현재 위치의 기온을 받아와 적절한 옷차림을 일러스트와 함께 추천해주는 간단한 앱입니다. 외부 API 연동과 비동기 처리(Async/Await) 패턴을 연습하기 위해 제작했습니다.",
             stack: ["JavaScript", "REST API"],
             links: [

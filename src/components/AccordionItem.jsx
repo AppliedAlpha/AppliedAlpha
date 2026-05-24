@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import * as Collapsible from '@radix-ui/react-collapsible';
 import { ChevronDown, ChevronUp, BookOpen, Globe } from 'lucide-react';
-import { GithubIcon } from './Icons';
+import { GithubIcon, YoutubeIcon, SteamIcon } from './Icons';
 
 const LINK_TYPES = {
-    github: { Icon: GithubIcon, label: 'GitHub', className: 'bg-stone-700 hover:bg-stone-600 text-white' },
-    blog:   { Icon: BookOpen,   label: 'Blog',   className: 'bg-orange-200 hover:bg-orange-300 text-stone-800' },
-    site:   { Icon: Globe,      label: 'Site',   className: 'bg-green-200 hover:bg-green-300 text-green-900' },
+    github:  { Icon: GithubIcon,  label: 'GitHub',  className: 'bg-stone-700 hover:bg-stone-600 text-white' },
+    blog:    { Icon: BookOpen,    label: 'Blog',    className: 'bg-orange-200 hover:bg-orange-300 text-stone-800' },
+    site:    { Icon: Globe,       label: 'Site',    className: 'bg-green-200 hover:bg-green-300 text-green-900' },
+    youtube: { Icon: YoutubeIcon, label: 'YouTube', className: 'bg-red-600 hover:bg-red-700 text-white' },
+    steam:   { Icon: SteamIcon,   label: 'Steam',   className: 'bg-[#1b2838] hover:bg-[#2a475e] text-white' },
 };
 
-export default function AccordionItem({ title, date, role, summary, links, children, defaultOpen = false }) {
+export default function AccordionItem({ title, date, role, links, children, defaultOpen = false }) {
     const [isOpen, setIsOpen] = useState(defaultOpen);
 
     return (
@@ -32,8 +34,6 @@ export default function AccordionItem({ title, date, role, summary, links, child
             </Collapsible.Trigger>
 
             {date && <span className="text-sm text-stone-500 font-sans block sm:hidden mt-2">{date}</span>}
-
-            {summary && <p className="font-semibold text-stone-800 mt-3">{summary}</p>}
 
             {links && links.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-3">

@@ -23,8 +23,8 @@ export default function ImageCarousel({ images }) {
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
                 {images.map((img, idx) => (
-                    <div key={idx} className="min-w-full h-full flex flex-col items-center justify-center text-stone-500 italic bg-[#f9f7f2]">
-                        {img.src ? <img src={img.src} alt={img.alt} className="w-full h-full object-cover" /> : <span>{img.alt}</span>}
+                    <div key={idx} className="min-w-full h-full flex flex-col items-center justify-center text-stone-500 italic bg-stone-300">
+                        {img.src ? <img src={img.src} alt={img.alt} className="w-full h-full object-contain" /> : <span>{img.alt}</span>}
                     </div>
                 ))}
             </div>

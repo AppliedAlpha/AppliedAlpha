@@ -13,9 +13,14 @@ export default function Projects() {
             </h2>
 
             {portfolioData.projects.map((item, idx) => (
-                <AccordionItem key={item.id} title={item.title} date={item.period} summary={item.summary} links={item.links} defaultOpen={idx === 0}>
+                <AccordionItem key={item.id} title={item.title} date={item.period} links={item.links} defaultOpen={idx === 0}>
                     <div className="space-y-4">
-                        <p>{item.description}</p>
+                        <p className="whitespace-pre-line break-keep break-words font-bold">{item.description}</p>
+                        {item.details && item.details.length > 0 && (
+                            <ul className="list-disc list-outside space-y-1 ml-5 text-stone-700 break-keep break-words">
+                                {item.details.map((d, i) => <li key={i}>{d}</li>)}
+                            </ul>
+                        )}
                         <ImageCarousel images={item.images} />
                         <div className="flex flex-wrap gap-2 pt-2">
                             {item.stack.map(tech => (
