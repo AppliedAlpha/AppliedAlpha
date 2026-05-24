@@ -21,6 +21,16 @@ export const portfolioData = {
             ]
         },
         {
+            id: "exp-drone-ta",
+            company: "서울드론아카데미",
+            role: "1·2기 교육과정 보조강사",
+            period: "2022 - 2023",
+            details: [
+                "(주)JS융합교육 운영, 드론 개발자 양성 강좌 보조강사",
+                "Raspberry Pi를 활용한 미니 드론 제어 및 코딩 강의 보조"
+            ]
+        },
+        {
             id: "exp-nareum",
             company: "나름청소년활동센터",
             role: "청소년 대상 과학프로그램 주강사·보조강사",
