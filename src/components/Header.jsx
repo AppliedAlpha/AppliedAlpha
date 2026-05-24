@@ -53,10 +53,10 @@ export default function Header({ setIsCardOpen }) {
 
                     <button
                         className="w-10 h-10 bg-stone-200 rounded-full border border-stone-300 hover:shadow-md hover:border-stone-400 transition-all flex items-center justify-center overflow-hidden flex-shrink-0"
-                        title="명함 보기"
+                        title="명함"
                         onClick={() => setIsCardOpen(true)}
                     >
-                        <span className="font-serif font-bold text-stone-600 text-sm">JH</span>
+                        <img src="/hoon.jpg" alt="명함" className="w-full h-full object-cover" />
                     </button>
 
                 </nav>
