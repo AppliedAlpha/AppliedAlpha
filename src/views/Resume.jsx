@@ -1,11 +1,12 @@
 import React from 'react';
-import { Briefcase, GraduationCap, Download } from 'lucide-react';
+import { Briefcase, GraduationCap, Award, Download } from 'lucide-react';
 import AccordionItem from '../components/AccordionItem';
 import EducationItem from '../components/EducationItem';
+import AwardItem from '../components/AwardItem';
 import { portfolioData } from '../data/data';
 
 export default function Resume() {
-    const { experience, education } = portfolioData;
+    const { experience, education, awards } = portfolioData;
     const resumePDF = "/test.txt"
 
     return (
@@ -42,6 +43,21 @@ export default function Resume() {
                         url={edu.url}
                         degree={edu.degree}
                         date={edu.period}
+                    />
+                ))}
+            </div>
+
+            <h2 className="text-3xl font-serif font-bold text-stone-800 border-b border-stone-400 pb-2 mb-8 mt-12 flex items-center gap-2">
+                <Award size={28} />
+                Awards
+            </h2>
+            <div className="mb-12">
+                {awards.map((award) => (
+                    <AwardItem
+                        key={award.id}
+                        competition={award.competition}
+                        prize={award.prize}
+                        date={award.date}
                     />
                 ))}
             </div>

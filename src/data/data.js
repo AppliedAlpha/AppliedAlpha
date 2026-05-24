@@ -56,6 +56,56 @@ export const portfolioData = {
             period: "2018.03 - 2021.02"
         }
     ],
+    awards: [
+        {
+            id: "award-gm-youth",
+            competition: "광명시 청소년의 달 모범청소년 표창",
+            prize: "광명시 모범청소년상 (경기도지사상)",
+            date: "2025.05"
+        },
+        {
+            id: "award-gm-startup",
+            competition: "광명시 청년 생각펼침 공모사업 청년창업분야 우수사례 경진대회",
+            prize: "장려상 (광명시장상)",
+            date: "2024.11"
+        },
+        {
+            id: "award-sejong-swai-2023",
+            competition: "세종대학교 2023 SW·AI 융합코딩경시대회",
+            prize: "은상",
+            date: "2023.12"
+        },
+        {
+            id: "award-ulsan-dfam",
+            competition: "제6회 울산 DfAM 경진대회 생활부문",
+            prize: "울산대학교총장상 (은상)",
+            date: "2022.11"
+        },
+        {
+            id: "award-gumi-3dp",
+            competition: "제7회 구미 3D프린팅BIZCON경진대회 디자인부문",
+            prize: "과학기술정보통신부장관상 (대상)",
+            date: "2022.10"
+        },
+        {
+            id: "award-sejong-swai-2021",
+            competition: "세종대학교 제8회 SW·AI 융합코딩경시대회",
+            prize: "소프트웨어융합대학장상 (1등상)",
+            date: "2021.11"
+        },
+        {
+            id: "award-makers-10",
+            competition: "제10회 창의메이커스필드 SW활용 아이디어톤",
+            prize: "3D프린팅협회장상",
+            date: "2019.12"
+        },
+        {
+            id: "award-makers-9",
+            competition: "제9회 창의메이커스필드 SW활용 아이디어톤",
+            prize: "정보통신산업진흥원장상",
+            date: "2019.08"
+        }
+    ],
     projects: [
         {
             id: "proj-1",
