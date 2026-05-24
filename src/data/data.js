@@ -114,6 +114,11 @@ export const portfolioData = {
             summary: "나만의 레시피를 저장하고 공유하는 서비스",
             description: "사용자가 자신만의 레시피를 등록하고 다른 사용자와 공유할 수 있는 웹 서비스입니다. 무한 스크롤 기능을 통해 대량의 데이터를 효율적으로 렌더링하도록 구현했습니다.",
             stack: ["React", "Firebase", "Tailwind"],
+            links: [
+                { type: "github", url: "#" },
+                { type: "blog",   url: "#" },
+                { type: "site",   url: "#" }
+            ],
             images: [
                 { alt: "메인 화면 스크린샷 (1/3)" },
                 { alt: "레시피 작성 화면 (2/3)" },
@@ -129,6 +134,9 @@ export const portfolioData = {
             summary: "OpenWeather API를 활용한 가벼운 유틸리티",
             description: "현재 위치의 기온을 받아와 적절한 옷차림을 일러스트와 함께 추천해주는 간단한 앱입니다. 외부 API 연동과 비동기 처리(Async/Await) 패턴을 연습하기 위해 제작했습니다.",
             stack: ["JavaScript", "REST API"],
+            links: [
+                { type: "github", url: "#" }
+            ],
             images: [
                 { alt: "날씨 검색 및 추천 결과 (1/2)" },
                 { alt: "지역별 날씨 즐겨찾기 (2/2)" }
